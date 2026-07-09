@@ -37,8 +37,11 @@ button.addEventListener("click", async () => {
       return;
     }
 
-    result.innerHTML = `
-       <h2>${data.name}</h2>
+ const icon = data.weather[0].icon;
+
+result.innerHTML = `
+  <h2>${data.name}</h2>
+  <img src="https://openweathermap.org/img/wn/${icon}@2x.png" />
   <p>🌡️ ${data.main.temp}°C</p>
   <p>🌥️ ${data.weather[0].description}</p>
 `;

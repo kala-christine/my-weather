@@ -47,3 +47,7 @@ button:hover {
   margin-top: 20px;
   font-size: 16px;
 }
+
+img {
+  width: 80px;
+}
